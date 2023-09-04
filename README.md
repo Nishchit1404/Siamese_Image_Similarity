@@ -34,7 +34,7 @@ The Triplet Loss requires an Anchor Image, a Positive Image of the same class an
 
 ## Dataset : 
 The Imagenette dataset is a subset of 10 easily classified classes from the [Imagenet dataset](https://github.com/fastai/imagenette).
-The Dataset used for training is a Balanced subset of the Imagenet Dataset and has been selected in the following Manner :
+The Dataset used for training is a Balanced subset of the Imagenette Dataset and has been selected and pre-processed using pandas:
 
 ### Dataset creation for Problem Statement 1
 1. The train set has total of 1280 datapoints and test set has total of 320 datapoints for both tasks (train:test split of 80:20).
