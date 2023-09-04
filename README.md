@@ -29,6 +29,9 @@ The Siamese Network is modified and used as neural network architecture. It cons
 
 #### EfficientNet-b0 is being employed as the feature extractor
 
+The Triplet Loss requires an Anchor Image, a Positive Image of the same class and a Negative Image of different class hence the image triplets are chosen in this format while training. 
+
+
 ## Dataset : 
 The Imagenette dataset is a subset of 10 easily classified classes from the [Imagenet dataset](https://github.com/fastai/imagenette).
 The Dataset used for training is a Balanced subset of the Imagenet Dataset and has been selected in the following Manner :
