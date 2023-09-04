@@ -20,8 +20,14 @@ Siamese Networks are a type of neural network architecture that are specifically
 
 ![](https://i.imgur.com/8zNrSFw.png)
 
+#### EfficientNet-b0 is being employed as the feature extractor
 
+### Problem statement 2 :
+The Siamese Network is modified and used as neural network architecture. It consist of three identical subnetworks that share the same weights and architecture. The extracted Features of the three images are then compared using Triplet Loss. The network tries to map input images (real, complex features) to a latent space.
 
+![](https://i.imgur.com/dcOyejC.png)
+
+#### EfficientNet-b0 is being employed as the feature extractor
 
 ## Dataset : 
 The Imagenette dataset is a subset of 10 easily classified classes from the [Imagenet dataset](https://github.com/fastai/imagenette).
