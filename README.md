@@ -53,6 +53,7 @@ The Dataset used for training is a Balanced subset of the Imagenette Dataset and
 
 ### Results for problem statement 1 : 
 ![](https://i.imgur.com/fGT6dkO.png)
+
 <img width="442" alt="Screenshot 2023-09-04 at 6 39 17 PM" src="https://github.com/Nishchit1404/Siamese_Image_Similarity/assets/51109601/5f7541b3-2ce3-4b3d-a227-d62063876c36">
 
 ### Results for problem statement 2:
