@@ -10,7 +10,8 @@ The Objective of the the repository is to display image similarity recognition u
 The first problem statment requires to design and train a deep learning model to predict whether two images belong to the same class or not. This is a binary classification problem. The model should take as input a pair of images and output a binary prediction ‘1’ if they belong to the same class and ‘0’ if they do not.
 
 ### Problem Statement 2:
-Your second problem statment is similar to the firs but requires to design and train a model that takes in three images and predicts whether at least two of them belong to the same class or not. This is a binary classification problem as well.
+Your second problem statment is similar to the firs but requires to design and train a model that takes in three images and predicts whether at least two of them belong to the same class or not.
+This is a binary classification problem as well.
 
 ## Dataset : 
 The Imagenette dataset is a subset of 10 easily classified classes from the [Imagenet dataset](https://github.com/fastai/imagenette).
