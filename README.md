@@ -16,14 +16,14 @@ This is a binary classification problem as well.
 ## Architectures Employed : 
 
 ### Problem statement 1 :
-Siamese Networks are a type of neural network architecture that are specifically designed for tasks like image similarity and verification. They consist of two identical subnetworks (often called "**twin**" networks) that share the same weights and architecture. They process each image separately and extract visual features from them. The extracted features are then compared to determine similarity.
+Siamese Networks are a type of neural network architecture that are specifically designed for tasks like image similarity and verification. They consist of two identical subnetworks (often called "**twin**" networks) that share the same weights and architecture. They process each image separately and extract visual features from them. The extracted features are then compared to determine similarity. **BinaryCrossEntropy loss** is being used for this part.
 
 ![](https://i.imgur.com/8zNrSFw.png)
 
 #### EfficientNet-b0 is being employed as the feature extractor
 
 ### Problem statement 2 :
-The Siamese Network is modified and used as neural network architecture. It consist of three identical subnetworks that share the same weights and architecture. The extracted Features of the three images are then compared using Triplet Loss. The network tries to map input images (real, complex features) to a latent space.
+The Siamese Network is modified and used as neural network architecture. It consist of three identical subnetworks that share the same weights and architecture. The extracted Features of the three images are then compared using **Triplet Loss**. The network tries to map input images (real, complex features) to a latent space.
 
 ![](https://i.imgur.com/dcOyejC.png)
 
@@ -49,4 +49,19 @@ The Dataset used for training is a Balanced subset of the Imagenette Dataset and
 3. Each class has 128 datapoints in train set and 32 datapoints in test set.
 4. Random Sampling was done by iterating through the Datapool of each class.
 
+## Results :
 
+### Results for problem statement 1 : 
+![](https://i.imgur.com/fGT6dkO.png)
+<img width="442" alt="Screenshot 2023-09-04 at 6 39 17 PM" src="https://github.com/Nishchit1404/Siamese_Image_Similarity/assets/51109601/5f7541b3-2ce3-4b3d-a227-d62063876c36">
+
+### Results for problem statement 2:
+![](https://i.imgur.com/lNqFJ0I.png)
+
+The model is trained to create an imitating latent space that learns distribution of data. Validation is used to verify those learnings by passing anchor, positive and negative image set.
+Prediction is done by comparing distances of inputs in the latent space i.e. comparing distances between the embedding using a **Threshold**.
+Threshold depends upon the characteristic of dataset. The desired balance between precision and recall, and the distribution of the distances between positive and negative pairs in the
+embedding space.
+
+Classification Report for Threshold = 6 
+![](https://i.imgur.com/bjcXZsL.png)
