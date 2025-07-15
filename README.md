@@ -18,7 +18,7 @@ The project not only provides working implementations but also delves into the n
     
 - **Loss Function:** **Binary Cross-Entropy Loss** is applied to the output of a final layer (e.g., a sigmoid activation) that combines the features, directly optimizing for binary classification of similarity.
     
-- **Diagram:**
+- **Diagram:** ![](https://i.imgur.com/8zNrSFw.png)
     
 - **Expertise Showcase:** This approach demonstrates proficiency in:
     
@@ -41,7 +41,7 @@ The project not only provides working implementations but also delves into the n
     
 - **Loss Function:** **Triplet Loss** is employed. This loss function requires three inputs: an **Anchor** image, a **Positive** image (same class as Anchor), and a **Negative** image (different class from Anchor). The objective is to minimize the distance between the Anchor and Positive embeddings while maximizing the distance between the Anchor and Negative embeddings, ensuring a specified margin.
     
-- **Diagram:**
+- **Diagram:** ![](https://i.imgur.com/dcOyejC.png)
     
 - **Expertise Showcase:** This method highlights advanced skills in:
     
@@ -79,15 +79,11 @@ The models demonstrate strong performance across both tasks, validating the effe
 
 ### Results for Problem Statement 1 (Siamese Network with Binary Cross-Entropy Loss):
 
-|   |   |
-|---|---|
-|**Metric**|**Value**|
-|Accuracy|**97.81%**|
-|Precision|**98.44%**|
-|Recall|**97.10%**|
-|F1-Score|**97.77%**|
+**_Visual Representation of Convergence:**_
+![](https://i.imgur.com/fGT6dkO.png)
 
-_Visual Representation of Results:_ <img width="442" alt="Confusion Matrix for PS1" src="https://github.com/Nishchit1404/Siamese_Image_Similarity/assets/51109601/5f7541b3-2ce3-4b3d-a227-d62063876c36">
+**_Classification Report_ :**
+<img width="442" alt="Screenshot 2023-09-04 at 6 39 17 PM" src="https://github.com/Nishchit1404/Siamese_Image_Similarity/assets/51109601/5f7541b3-2ce3-4b3d-a227-d62063876c36">
 
 ### Results for Problem Statement 2 (Modified Siamese Network with Triplet Loss):
 
@@ -100,10 +96,11 @@ The Triplet Loss model focuses on creating an embedding space where distances di
 - **Threshold-based Prediction:** The final classification relies on applying a threshold to the calculated distances in the embedding space. The optimal threshold depends on the dataset characteristics and the desired balance between precision and recall.
     
 
-_Visual Representation of Triplet Loss Convergence:_
+**_Visual Representation of Triplet Loss Convergence:**_
+![](https://i.imgur.com/lNqFJ0I.png)
 
-_Classification Report for Threshold = 6:_
-
+**_Classification Report for Threshold_ = 6:**
+![](https://i.imgur.com/bjcXZsL.png)
 ## 💡 Key Learnings & Future Enhancements
 
 This project demonstrates a comprehensive understanding of image similarity tasks using advanced deep learning techniques. Key takeaways include:
