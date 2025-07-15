@@ -79,11 +79,18 @@ The models demonstrate strong performance across both tasks, validating the effe
 
 ### Results for Problem Statement 1 (Siamese Network with Binary Cross-Entropy Loss):
 
-**_Visual Representation of Convergence:**_
-![](https://i.imgur.com/fGT6dkO.png)
+**_Visual Representation of Results:_**
 
-**_Classification Report_ :**
-<img width="442" alt="Screenshot 2023-09-04 at 6 39 17 PM" src="https://github.com/Nishchit1404/Siamese_Image_Similarity/assets/51109601/5f7541b3-2ce3-4b3d-a227-d62063876c36">
+<p align="center">
+<img src="https://i.imgur.com/fGT6dkO.png" alt="Accuracy and Loss Plot for PS1">
+</p>
+
+**_Classification Metrics:_**
+
+<p align="center">
+<img width="442" alt="Confusion Matrix for PS1" src="https://github.com/Nishchit1404/Siamese_Image_Similarity/assets/51109601/5f7541b3-2ce3-4b3d-a227-d62063876c36">
+</p>
+
 
 ### Results for Problem Statement 2 (Modified Siamese Network with Triplet Loss):
 
@@ -96,11 +103,18 @@ The Triplet Loss model focuses on creating an embedding space where distances di
 - **Threshold-based Prediction:** The final classification relies on applying a threshold to the calculated distances in the embedding space. The optimal threshold depends on the dataset characteristics and the desired balance between precision and recall.
     
 
-**_Visual Representation of Triplet Loss Convergence:**_
-![](https://i.imgur.com/lNqFJ0I.png)
+**_Visual Representation of Triplet Loss Convergence:_**
 
-**_Classification Report for Threshold_ = 6:**
-![](https://i.imgur.com/bjcXZsL.png)
+<p align="center">
+<img src="https://i.imgur.com/lNqFJ0I.png" alt="Accuracy and Loss Plot for PS2">
+</p>
+
+**_Classification Metrics for Threshold_ = 6:** 
+
+<p align="center">
+<img width="442" alt="Confusion Matrix for PS2" src="https://i.imgur.com/bjcXZsL.png">
+</p>
+
 ## 💡 Key Learnings & Future Enhancements
 
 This project demonstrates a comprehensive understanding of image similarity tasks using advanced deep learning techniques. Key takeaways include:
